@@ -1,0 +1,7 @@
+go get "github.com/jinzhu/gorm"
+go get "github.com/jinzhu/gorm/dialects/mysql"
+go get "github.com/jinzhu/gorm/dialects/postgres"
+can use this instead on the import (
+    _ "github.com/jinzhu/gorm/dialects/postgres"
+)
+go get "github.com/gorilla/mux"
