@@ -1,6 +1,7 @@
 package main
 
 import (
+	"go-bookstore/pkg/config"
 	"go-bookstore/pkg/routes"
 	"log"
 	"net/http"
@@ -9,6 +10,7 @@ import (
 )
 
 func main() {
+	defer config.CloseDB()
 	r := mux.NewRouter()
 	routes.RegisterBookStoreRoutes(r)
 	http.Handle("/", r)

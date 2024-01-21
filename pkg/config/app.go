@@ -35,7 +35,7 @@ func GetDB() *gorm.DB {
 	return db
 }
 
-func Disconnect() {
+func CloseDB() {
 	if db != nil {
 		db.Close()
 	}

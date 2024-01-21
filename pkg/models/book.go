@@ -16,6 +16,7 @@ type Book struct {
 }
 
 // helper to intialize with the db in the first place
+// called automatically whenever the package we use the package
 func init() {
 	config.Connect()
 	db = config.GetDB()

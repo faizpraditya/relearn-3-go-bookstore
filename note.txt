@@ -7,3 +7,5 @@ cara kerja (simple explanation)
 main -> routes -> controllers -> models -> config
 or
 main -> routes -> controllers -> models (use config here to interact with db)
+
+func init() automatically called whenever we use a package that contains init() on it
