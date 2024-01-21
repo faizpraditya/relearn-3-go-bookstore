@@ -2,3 +2,8 @@ go get "github.com/jinzhu/gorm"
 go get "github.com/jinzhu/gorm/dialects/mysql"
 go get "github.com/jinzhu/gorm/dialects/postgres"
 go get "github.com/gorilla/mux"
+
+cara kerja (simple explanation)
+main -> routes -> controllers -> models -> config
+or
+main -> routes -> controllers -> models (use config here to interact with db)
